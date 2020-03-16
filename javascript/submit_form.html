@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function check_details()
+		{
+			var username=document.getElementById('username').value;
+			var password=document.getElementById('password').value;
+			if(username="" || password="")
+			{
+				alert("please fill all fields");
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+		}
+	</script>
+
+<form action="submit.html" method="GET" onsubmit=" check_details()">
+	Username:<input type="text" name="username" id="username">
+	Password:<input type="password" name="password" id="password">
+	<input type="submit" name="" id="submit" value="Submit">
+</form>
+</body>
+</html>

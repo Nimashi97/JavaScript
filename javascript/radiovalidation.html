@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function is_checked()
+		{
+			var Yes_checked =document.getElementById('auto_renew_yes').checked;
+			var No_checked =document.getElementById('auto_renew_no').checked;
+			if(Yes_checked == false && No_checked == false)
+			{
+				alert("please select an option");
+				return false;
+			}
+			else 
+			{
+				return	true;
+			}
+		}
+
+
+	</script>
+<form action="submit.html" method="post" onsubmit="return is_checked()">
+	Yes<input type="radio" name="auto_renew" value="yes" id="auto_renew_yes"><br>
+	No<input type="radio" name="auto_renew" value="no" id="auto_renew_no"><br>
+	<input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>

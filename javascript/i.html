@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	var image_track='w';
+	function change()
+	{
+
+		var image=document.getElementById('i');
+		if(image_track == 'w')
+		{
+			image.src ="man.png";
+			image_track='m';
+		}
+		else
+		{
+			image.src ="work.jpg";
+			image_track='w';
+		}
+		
+	}
+</script>
+<body>
+	<img src="work.jpg" id="i" onclick="change();" >
+
+</body>
+</html>
